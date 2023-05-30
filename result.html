@@ -4,19 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e581d3;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #f0f3f7;
+            margin: 40px 0;
+        }
+
+        .result {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .result h1 {
+            font-size: 36px;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .correct-answer {
+            background-color: #4caf50;
+            color: #fff;
+            margin-right: 10px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .wrong-answer {
+            background-color: #f44336;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .result-image {
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Your result is:</h1>
-  Correct Answer:<h1>0</h1>
- Wrong Answer:<h1>0</h1>
+    <h1>Result</h1>
+    <div class="result">
+        <div class="correct-answer">
+            <h1 id="correct-count">0</h1>
+            <p>Correct Answer(s)</p>
+        </div>
+        <div class="wrong-answer">
+            <h1 id="wrong-count">0</h1>
+            <p>Wrong Answer(s)</p>
+        </div>
+    </div>
 
+    <div class="result-image">
+        <img src="Screenshot (119).png" alt="Result Image" width="800">
+    </div>
 
     <script>
-        let total_question=5;
-document.getElementsByTagName("h1")[1].innerText=localStorage.getItem("Correct");
-document.getElementsByTagName("h1")[2].innerText=total_question - localStorage.getItem("Correct");
-    
+        let totalQuestion = 5;
+        document.getElementById("correct-count").innerText = localStorage.getItem("Correct");
+        document.getElementById("wrong-count").innerText = totalQuestion - localStorage.getItem("Correct");
     </script>
 </body>
 </html>
