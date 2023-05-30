@@ -5,43 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .border {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #555;
+            margin-top: 0;
+        }
+
+        .option {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Additional Styles */
+
+        /* Colors */
+        h1 {
+            color: rgb(91, 145, 164);
+        }
+
+        .border {
+            border-color: #d31f28;
+        }
+
+        h2 {
+            color: #a05a5a;
+        }
+
+        label {
+            color: #61677b;
+        }
+
+        button {
+            background-color: #9e1a8b;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <h1>C-Programming</h1>
     <form action="submit-test.php" method="post" id="test-form">
         <div class="border">
             <h1>Question 1:</h1>
-            <h2> Who is the father of C-language?</h2>
-            <div class="option"><label>
-                <input type="radio" name="q1" value="option1">
-                a) Steve Jobs
-              </label>
-              
-              <label>
-                <input type="radio" name="q1" value="option2">
-                b) Dennis Ritchie
-                
-              </label>
-              <label>
-                <input type="radio" name="q1" value="option3">
-                c) James gosling
-                
-              </label>
-              
-              <label>
-                <input type="radio" name="q1" value="option4">
-                d) None of the above
-              </label></div>
-            </div>
-            <div class="border">
-                <h1>Question 2:</h1>
-                <h2>what is 2*3?</h2>
-                <div class="option"> 
-                  <label>
-                  <input type="radio" name="q2" value="option1">
-                  a) 4
+            <h2>Who is the father of C-language?</h2>
+            <div class="option">
+                <label>
+                    <input type="radio" name="q1" value="option1">
+                    a) Steve Jobs
                 </label>
-                
+              
+                <label>
+                    <input type="radio" name="q1" value="option2">
+                    b) Dennis Ritchie
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="option3">
+                    c) James Gosling
+                </label>
+              
+                <label>
+                    <input type="radio" name="q1" value="option4">
+                    d) None of the above
+                </label>
+            </div>
+        </div>
+
+        <div class="border">
+            <h1>Question 2:</h1>
+            <h2>What is 2*3?</h2>
+            <div class="option">
+                <label>
+                    <input type="radio" name="q2" value="option1">
+                    a) 4
+                </label>
+
                 <label>
                   <input type="radio" name="q2" value="option2">
                   b) 8
@@ -136,10 +223,12 @@
                 </label>
             </div>
             <button>
-                <a href="result.html" id="btn">Submit</a>
+              <a href="result.html" id="btn">Submit</a>
             </button>
             <!-- <button >submit</button> -->
     
 </body>
 <script src="j.js"></script>
 </html>
+              
+               
