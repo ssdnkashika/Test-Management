@@ -5,140 +5,225 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .border {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #555;
+            margin-top: 0;
+        }
+
+        .option {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Additional Styles */
+
+        /* Colors */
+        h1 {
+           color: rgb(91, 145, 164);
+        }
+
+        .border {
+            border-color: #d31f28;
+        }
+
+        h2 {
+            color: #a05a5a;
+        }
+
+        label {
+            color: #61677b;
+        }
+
+        button {
+            background-color: #9e1a8b;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <h1>Python</h1>
     <form action="submit-test.php" method="post" id="test-form">
         <div class="border">
             <h1>Question 1:</h1>
-            <h2> Who developed the Python language ?</h2>
-            <div class="option"><label>
-                <input type="radio" name="q1" value="option1">
-                a) Dennis Ritchie
-              </label>
-              
-              <label>
-                <input type="radio" name="q1" value="option2">
-                b) Guido Van Rossum
-                
-              </label>
-              <label>
-                <input type="radio" name="q1" value="option3">
-                c) james gosling
-                
-              </label>
-              
-              <label>
-                <input type="radio" name="q1" value="option4">
-                d) Wick Van Rossum
-              </label></div>
-            </div> 
-            <div class="border">
-              <h1>Question 2:</h1>
-              <h2>Which of the following is an invalid variable ?</h2>
-              <div class="option"> 
+            <h2>Who developed the Python language?</h2>
+            <div class="option">
                 <label>
-                <input type="radio" name="q2" value="option1">
-                a) my_string_1
-              </label>
-              
-              <label>
-                <input type="radio" name="q2" value="option2">
-                b) 1st_string
-                
-              </label>
-              <label>
-                <input type="radio" name="q2" value="option3">
-                c) foo
-                
-              </label>
-              
-              <label>
-                <input type="radio" name="q2" value="option4">
-                d) _
-              </label></div>
-            </div>
-            <div class="border">
-              <h1>Question 3: </h1>
-              <h2>In which language is Python written ?</h2>
-              <div class="option"> 
-                <label>
-                <input type="radio" name="q3" value="option1">
-                a) English
-              </label>
-              
-              <label>
-                <input type="radio" name="q3" value="option2">
-                b) PHP
-                
-              </label>
-              <label>
-                <input type="radio" name="q3" value="option3">
-                c) C
-                
-              </label>
-              
-              <label>
-                <input type="radio" name="q3" value="option4">
-                d) All of the above
-              </label></div>
-            </div>
-            <div class="border">
-                <h1>Question 4: </h1>
-                <h2>Which is the extension of Python ?</h2>
-                <div class="option"> 
-                  <label>
-                  <input type="radio" name="q4" value="option1">
-                  a) .py
+                    <input type="radio" name="q1" value="option1">
+                    a) Dennis Ritchie
                 </label>
-                
+              
                 <label>
-                  <input type="radio" name="q4" value="option2">
-                  b) .p
-                  
+                    <input type="radio" name="q1" value="option2">
+                    b) Guido Van Rossum
                 </label>
                 <label>
-                  <input type="radio" name="q4" value="option3">
-                  c) .python
-                  
+                    <input type="radio" name="q1" value="option3">
+                    c) James Gosling
                 </label>
-                
+              
                 <label>
-                  <input type="radio" name="q4" value="option4">
-                  d) None of the above
-                </label></div>
-              </div>
-              <div class="border">
-                <h1>Question 5: </h1>
-                <h2>Which character is used in python to make a single line comment ?</h2>
-                <div class="option"> 
-                  <label>
-                  <input type="radio" name="q5" value="option1">
-                  a) /
-                </label>
-                
-                <label>
-                  <input type="radio" name="q5" value="option2">
-                  b)//
-                  
-                </label>
-                <label>
-                  <input type="radio" name="q5" value="option3">
-                  c) #
-                  
-                </label>
-                
-                <label>
-                  <input type="radio" name="q5" value="option4">
-                  d) !
+                    <input type="radio" name="q1" value="option4">
+                    d) Wick Van Rossum
                 </label>
             </div>
-            <button>
-              <a href="result.html" id="btn">Submit</a>
-        
-            </button>
-          <!-- <button >submit</button> -->
-    
+        </div>
+
+        <div class="border">
+            <h1>Question 2:</h1>
+            <h2>Which of the following is an invalid variable?</h2>
+            <div class="option">
+                <label>
+                    <input type="radio" name="q2" value="option1">
+                    a) my_string_1
+                </label>
+              
+                <label>
+                    <input type="radio" name="q2" value="option2">
+                    b) 1st_string
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="option3">
+                    c) foo
+                </label>
+              
+                <label>
+                    <input type="radio" name="q2" value="option4">
+                    d) _
+                </label>
+            </div>
+        </div>
+
+        <div class="border">
+          <h1>Question 3: </h1>
+          <h2>In which language is Python written ?</h2>
+          <div class="option"> 
+            <label>
+            <input type="radio" name="q3" value="option1">
+            a) English
+          </label>
+          
+          <label>
+            <input type="radio" name="q3" value="option2">
+            b) PHP
+            
+          </label>
+          <label>
+            <input type="radio" name="q3" value="option3">
+            c) C
+            
+          </label>
+          
+          <label>
+            <input type="radio" name="q3" value="option4">
+            d) All of the above
+          </label></div>
+        </div>
+        <div class="border">
+            <h1>Question 4: </h1>
+            <h2>Which is the extension of Python ?</h2>
+            <div class="option"> 
+              <label>
+              <input type="radio" name="q4" value="option1">
+              a) .py
+            </label>
+            
+            <label>
+              <input type="radio" name="q4" value="option2">
+              b) .p
+              
+            </label>
+            <label>
+              <input type="radio" name="q4" value="option3">
+              c) .python
+              
+            </label>
+            
+            <label>
+              <input type="radio" name="q4" value="option4">
+              d) None of the above
+            </label></div>
+          </div>
+          <div class="border">
+            <h1>Question 5: </h1>
+            <h2>Which character is used in python to make a single line comment ?</h2>
+            <div class="option"> 
+              <label>
+              <input type="radio" name="q5" value="option1">
+              a) /
+            </label>
+            
+            <label>
+              <input type="radio" name="q5" value="option2">
+              b)//
+              
+            </label>
+            <label>
+              <input type="radio" name="q5" value="option3">
+              c) #
+              
+            </label>
+            
+            <label>
+              <input type="radio" name="q5" value="option4">
+              d) !
+            </label>
+        </div>
+        <button>
+            <a href="result.html" id="btn">Submit</a>
+        </button>
+    </form>
 </body>
 <script src="T.js"></script>
 </html>
